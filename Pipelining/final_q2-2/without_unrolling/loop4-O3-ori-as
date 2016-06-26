@@ -1,0 +1,131 @@
+	.set noreorder
+	.set volatile
+	.set noat
+	.set nomacro
+	.section	.rodata.str1.1,"aMS",@progbits,1
+$LC0:
+	.ascii "%d\12\0"
+	.text
+	.align 2
+	.align 4
+	.globl main
+	.ent main
+main:
+	.frame $30,48,$26,0
+	.mask 0x4003e00,-48
+	ldah $29,0($27)		!gpdisp!1
+	lda $29,0($29)		!gpdisp!1
+$main..ng:
+	lda $30,-48($30)
+	mov $31,$4
+	ldq $28,A($29)		!literal
+	stq $26,0($30)
+	stq $9,8($30)
+	stq $10,16($30)
+	stq $11,24($30)
+	stq $12,32($30)
+	stq $13,40($30)
+	.prologue 1
+$L9:
+	s4addq $4,$4,$1
+	s8addq $1,$28,$2
+	mov $31,$3
+$L8:
+	addq $4,$3,$5
+	stl $5,0($2)
+	addl $3,1,$3
+	cmple $3,9,$0
+	lda $2,4($2)
+	bne $0,$L8
+	addl $4,1,$4
+	cmple $4,9,$2
+	bne $2,$L9
+	mov $31,$5
+	ldq $25,B($29)		!literal
+$L17:
+	s4addq $5,$5,$4
+	s8addq $4,$25,$3
+	addq $5,$5,$2
+	mov $31,$4
+$L16:
+	addl $4,1,$4
+	stl $2,0($3)
+	cmple $4,9,$6
+	lda $2,2($2)
+	cpys $f31,$f31,$f31
+	lda $3,4($3)
+	bne $6,$L16
+	addl $5,1,$5
+	cmple $5,9,$3
+	bne $3,$L17
+	mov $31,$24
+	ldq $13,C($29)		!literal
+$L29:
+	s4addq $24,$24,$8
+	s8addq $8,0,$7
+	mov $7,$23
+	mov $31,$22
+	addq $7,$13,$8
+$L28:
+	mov $31,$6
+	ldl $7,0($8)
+	s4addq $22,$25,$5
+	addq $23,$28,$4
+	.align 4
+$L27:
+	ldl $11,0($4)
+	bis $31,$31,$31
+	addl $6,1,$6
+	ldl $12,0($5)
+	cmple $6,9,$9
+	lda $4,4($4)
+	mull $11,$12,$10
+	lda $5,40($5)
+	addq $7,$10,$1
+	cpys $f31,$f31,$f31
+	bis $31,$1,$7
+	bne $9,$L27
+	addl $22,1,$22
+	stl $1,0($8)
+	cmple $22,9,$16
+	cpys $f31,$f31,$f31
+	lda $8,4($8)
+	bne $16,$L28
+	addl $24,1,$24
+	cmple $24,9,$17
+	bne $17,$L29
+	mov $31,$12
+	ldah $11,$LC0($29)		!gprelhigh
+$L37:
+	s4addq $12,$12,$18
+	s8addq $18,$13,$9
+	mov $31,$10
+$L36:
+	ldl $17,0($9)
+	addl $10,1,$10
+	ldq $27,printf($29)		!literal!2
+	lda $16,$LC0($11)		!gprellow
+	lda $9,4($9)
+	jsr $26,($27),printf		!lituse_jsr!2
+	ldah $29,0($26)		!gpdisp!3
+	cmple $10,9,$19
+	lda $29,0($29)		!gpdisp!3
+	bne $19,$L36
+	addl $12,1,$12
+	cmple $12,9,$20
+	bne $20,$L37
+	ldq $26,0($30)
+	ldq $9,8($30)
+	ldq $10,16($30)
+	ldq $11,24($30)
+	ldq $12,32($30)
+	mov $31,$0
+	ldq $13,40($30)
+	lda $30,48($30)
+	ret $31,($26),1
+	.end main
+	.comm	A,400,4
+	.comm	B,400,4
+	.comm	C,400,4
+	.section	.note.GNU-stack,"",@progbits
+	.ident	"GCC: (GNU) 3.4.3"

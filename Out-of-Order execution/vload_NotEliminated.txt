@@ -1,0 +1,164 @@
+gem5 Simulator System.  http://gem5.org
+gem5 is copyrighted software; use the --copyright option for details.
+
+gem5 compiled Nov 17 2015 19:40:37
+gem5 started Nov 17 2015 19:41:59
+gem5 executing on node10
+command line: build/ALPHA/gem5.opt --debug-flags=vload -d ./Part4 configs/example/se.py --cpu-type=detailed --caches -c ./Benchmark/matmul-O0-bin
+Global frequency set at 1000000000000 ticks per second
+**** REAL SIMULATION ****
+info: Entering event queue @ 0.  Starting simulation...
+info: Increasing stack size by one page.
+1878500: global: vload, creating a new one:for load 0x12000a448, store 0x12000a444, store SequenceNum:  1629, Load SequenceNum:  1630
+4399000: global: vload, creating a new one:for load 0x120006038, store 0x120006034, store SequenceNum:  3198, Load SequenceNum:  3199
+5057500: global: vload, creating a new one:for load 0x120001320, store 0x12000131c, store SequenceNum:  4528, Load SequenceNum:  4529
+5158500: global: vload, creating a new one:for load 0x1200057e0, store 0x1200057cc, store SequenceNum:  4573, Load SequenceNum:  4578
+7800500: global: vload, creating a new one:for load 0x120029158, store 0x120029154, store SequenceNum:  7574, Load SequenceNum:  7575
+9606000: global: vload, creating a new one:for load 0x120000160, store 0x120000154, store SequenceNum:  9522, Load SequenceNum:  9525
+10058500: global: vload, creating a new one:for load 0x12000034c, store 0x120000398, store SequenceNum:  9965, Load SequenceNum:  9967
+10068000: global: vload, creating a new one:for load 0x12000035c, store 0x120000398, store SequenceNum:  10028, Load SequenceNum:  10034
+10077500: global: vload, creating a new one:for load 0x120000360, store 0x120000398, store SequenceNum:  10087, Load SequenceNum:  10094
+10134000: global: vload, creating a new one:for load 0x12000033c, store 0x1200003a8, store SequenceNum:  10381, Load SequenceNum:  10383
+10570000: global: vload, creating a new one:for load 0x1200003c4, store 0x120000414, store SequenceNum:  12481, Load SequenceNum:  12483
+10579500: global: vload, creating a new one:for load 0x1200003d4, store 0x120000414, store SequenceNum:  12547, Load SequenceNum:  12553
+10589000: global: vload, creating a new one:for load 0x1200003d8, store 0x120000414, store SequenceNum:  12609, Load SequenceNum:  12616
+10598500: global: vload, creating a new one:for load 0x1200003f8, store 0x120000414, store SequenceNum:  12670, Load SequenceNum:  12685
+10607000: global: vload, creating a new one:for load 0x1200003fc, store 0x120000414, store SequenceNum:  12723, Load SequenceNum:  12739
+10665500: global: vload, creating a new one:for load 0x1200003b4, store 0x120000424, store SequenceNum:  13125, Load SequenceNum:  13127
+11315500: global: vload, creating a new one:for load 0x120000440, store 0x12000052c, store SequenceNum:  16217, Load SequenceNum:  16219
+11403500: global: vload, creating a new one:for load 0x120000450, store 0x12000051c, store SequenceNum:  16835, Load SequenceNum:  16837
+11417500: global: vload, creating a new one:for load 0x120000450, store 0x12000052c, store SequenceNum:  16922, Load SequenceNum:  16928
+11507500: global: vload, creating a new one:for load 0x120000450, store 0x12000051c, store SequenceNum:  17536, Load SequenceNum:  17538
+11522500: global: vload, creating a new one:for load 0x120000460, store 0x12000052c, store SequenceNum:  17620, Load SequenceNum:  17630
+11534500: global: vload, creating a new one:for load 0x120000464, store 0x12000051c, store SequenceNum:  17717, Load SequenceNum:  17724
+11746500: global: vload, creating a new one:for load 0x120000508, store 0x120000510, store SequenceNum:  18860, Load SequenceNum:  18911
+12793000: global: vload, creating a new one:for load 0x120000534, store 0x12000052c, store SequenceNum:  26057, Load SequenceNum:  26062
+13747500: global: vload, creating a new one:for load 0x120000430, store 0x12000053c, store SequenceNum:  32219, Load SequenceNum:  32221
+19627500: global: vload, creating a new one:for load 0x120000558, store 0x1200005b4, store SequenceNum:  70829, Load SequenceNum:  70831
+19898000: global: vload, creating a new one:for load 0x12000ca78, store 0x12000ca74, store SequenceNum:  71041, Load SequenceNum:  71042
+20001500: global: vload, creating a new one:for load 0x12000caf0, store 0x12000caec, store SequenceNum:  71135, Load SequenceNum:  71136
+20325500: global: vload, creating a new one:for load 0x12000cb8c, store 0x12000cb88, store SequenceNum:  71232, Load SequenceNum:  71233
+20655500: global: vload, creating a new one:for load 0x12000ccbc, store 0x12000cc9c, store SequenceNum:  71429, Load SequenceNum:  71437
+21195500: global: vload, creating a new one:for load 0x12000c30c, store 0x12000c31c, store SequenceNum:  71651, Load SequenceNum:  71663
+21989000: global: vload, creating a new one:for load 0x12001b7f0, store 0x12001b7dc, store SequenceNum:  71957, Load SequenceNum:  71962
+21989000: global: vload, creating a new one:for load 0x12001b7f0, store 0x12001b7e0, store SequenceNum:  71958, Load SequenceNum:  71962
+22134500: global: vload, creating a new one:for load 0x12001b7f4, store 0x12001b7dc, store SequenceNum:  72001, Load SequenceNum:  72007
+22135000: global: vload, creating a new one:for load 0x12001b7f4, store 0x12001b7e0, store SequenceNum:  72002, Load SequenceNum:  72007
+22727000: global: vload, creating a new one:for load 0x12001b84c, store 0x12001b844, store SequenceNum:  72391, Load SequenceNum:  72393
+22727000: global: vload, creating a new one:for load 0x12001b84c, store 0x12001b848, store SequenceNum:  72392, Load SequenceNum:  72393
+22878000: global: vload, creating a new one:for load 0x12001b830, store 0x12001b7e0, store SequenceNum:  72579, Load SequenceNum:  72583
+22887000: global: vload, creating a new one:for load 0x12001b860, store 0x12001b848, store SequenceNum:  72625, Load SequenceNum:  72631
+23763500: global: vload, creating a new one:for load 0x12001b930, store 0x12001b940, store SequenceNum:  73069, Load SequenceNum:  73190
+570
+24694000: global: vload, creating a new one:for load 0x120000568, store 0x1200005b4, store SequenceNum:  74486, Load SequenceNum:  74492
+24953500: global: vload, creating a new one:for load 0x12000db44, store 0x12000db38, store SequenceNum:  75051, Load SequenceNum:  75054
+24962500: global: vload, creating a new one:for load 0x12000db8c, store 0x12000db54, store SequenceNum:  75088, Load SequenceNum:  75102
+660
+25203500: global: vload, creating a new one:for load 0x12000056c, store 0x1200005b4, store SequenceNum:  76040, Load SequenceNum:  76047
+750
+840
+930
+26209500: global: vload, creating a new one:for load 0x12001c488, store 0x12001c498, store SequenceNum:  80802, Load SequenceNum:  80809
+1020
+1110
+1200
+1290
+1380
+660
+770
+880
+990
+1100
+1210
+1320
+1430
+1540
+1650
+750
+880
+1010
+1140
+1270
+1400
+1530
+1660
+1790
+1920
+840
+990
+1140
+1290
+1440
+1590
+1740
+1890
+2040
+2190
+33393500: global: vload, creating a new one:for load 0x1200005bc, store 0x1200005b4, store SequenceNum:  117198, Load SequenceNum:  117203
+930
+1100
+1270
+1440
+1610
+1780
+1950
+2120
+2290
+35235000: global: vload, creating a new one:for load 0x120000548, store 0x1200005c4, store SequenceNum:  126567, Load SequenceNum:  126569
+2460
+1020
+1210
+1400
+1590
+1780
+1970
+2160
+2350
+2540
+2730
+37476000: global: vload, creating a new one:for load 0x120000558, store 0x1200005c4, store SequenceNum:  138001, Load SequenceNum:  138007
+1110
+37684000: global: vload, creating a new one:for load 0x120000558, store 0x1200005b4, store SequenceNum:  139068, Load SequenceNum:  139070
+1320
+37892000: global: vload, creating a new one:for load 0x120000568, store 0x1200005b4, store SequenceNum:  140139, Load SequenceNum:  140145
+1530
+38099000: global: vload, creating a new one:for load 0x12000056c, store 0x1200005b4, store SequenceNum:  141206, Load SequenceNum:  141213
+1740
+1950
+2160
+2370
+2580
+39112500: global: vload, creating a new one:for load 0x1200005bc, store 0x1200005b4, store SequenceNum:  146396, Load SequenceNum:  146401
+2790
+3000
+1200
+1430
+1660
+1890
+2120
+2350
+2580
+2810
+3040
+3270
+1290
+1540
+1790
+2040
+2290
+2540
+2790
+3040
+3290
+3540
+1380
+1650
+1920
+2190
+2460
+2730
+3000
+3270
+3540
+3810
+Exiting @ tick 47591000 because target called exit()
